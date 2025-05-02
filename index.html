@@ -1,0 +1,33 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidores de Minecraft</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="mc_logo.png" alt="Minecraft Logo" class="logo">
+        <h1>Servidores de Minecraft</h1>
+    </header>
+    <div class="filter-container">
+        <div class="filter-label">Filtrar por:</div>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="java">Java</button>
+            <button class="filter-btn" data-filter="bedrock">Bedrock</button>
+        </div>
+    </div>
+    <main>
+        <div id="loading">Cargando servidores...</div>
+        <div id="error" class="hidden">Error al cargar los servidores</div>
+        <div id="servidores-container" class="hidden"></div>
+        <div id="no-results" class="hidden">No hay servidores que coincidan con el filtro seleccionado</div>
+    </main>
+    <footer>
+        <p>Información de servidores actualizada en tiempo real</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
